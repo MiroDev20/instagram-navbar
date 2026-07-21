@@ -1,4 +1,4 @@
-# instagram-navbar
+# Instagram Navbar
 
 ## Objetivos
 
