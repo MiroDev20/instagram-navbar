@@ -92,3 +92,14 @@ img {
         margin-bottom: -5px;
     }
 }
+
+/*------------------------------*\
+        #ANIMATION
+\*------------------------------*/
+
+.navbar__menu-icon:hover,
+.navbar__item:hover,
+.navbar__brand:hover {
+    animation-duration: transform 150ms;
+    transform: scale(1.05);
+}
