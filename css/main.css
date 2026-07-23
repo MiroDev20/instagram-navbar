@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font);
+}
+
+img {
+    width: 24px;
+}
+
+.navbar__isotype {
+    width: 50px;
+    aspect-ratio: initial;
+}
+
+.perfil {
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+}
+
+.navbar__container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    border-top: 1px solid var(--text-color);
+    width: 100%;
+}
+
+.navbar__item {
+    display: flex;
+    padding: 12px;
+}
+.navbar__more,
+.navbar__brand,
+.navbar__text--hidden {
+    display: none;
+}
