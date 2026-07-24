@@ -116,3 +116,32 @@ img {
 .navbar__item:focus {
     transform: scale(1.05);
 }
+
+/*------------------------------*\
+        #DARKMODE
+\*------------------------------*/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--text-color);
+    }
+
+    .navbar__more,
+    .navbar__brand,
+    .navbar__icon:not(.perfil),
+    .navbar__item .navbar__text {
+        filter: invert(1);
+    }
+
+    .perfil {
+        border: 2px solid var(--bg-color);
+    }
+
+    .navbar {
+        border-right: 1px solid var(--bg-color);
+    }
+
+    .navbar__item:focus {
+        outline: 2px solid var(--bg-color);
+    }
+}
