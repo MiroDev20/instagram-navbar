@@ -1,7 +1,10 @@
 body {
     display: flex;
+
     height: 100vh;
+
     background: var(--bg-color);
+
     color: var(--text-color);
     font-family: var(--font);
 }
@@ -10,32 +13,37 @@ img {
     width: 24px;
 }
 
-.perfil {
-    border-radius: 50%;
-    border: 2px solid var(--text-color);
-}
-
 .navbar {
-    display: flex;
-    padding: 1rem;
-    width: 100%;
     position: fixed;
     bottom: 0px;
-    border-top: 1px solid white;
 
+    display: flex;
+
+    width: 100%;
+
+    padding: 1rem;
+    
+    border-top: 1px solid white;
 }
 
 .navbar__container {
+    justify-content: space-between;
     display: flex;
     gap: 10px;
+
     width: 100%;
-    justify-content: space-between;
 }
 
 .navbar__item {
     display: flex;
-    padding: 12px;
     gap: 1rem;
+
+    padding: 12px;
+}
+
+.perfil {
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
 }
 
 .navbar__more,
@@ -53,9 +61,11 @@ img {
 @media (min-width: 768px) {
     .navbar {
         flex-direction: column;
+        justify-content: space-between;
+
         height: 100%;
         width: auto;
-        justify-content: space-between;
+        
         border-right: 1px solid white;
         border-top: none;
     }
@@ -69,6 +79,7 @@ img {
     .navbar__logo,
     .navbar__item--hidden {
         display: flex;
+
         object-fit: contain;
     }
 
@@ -76,8 +87,9 @@ img {
     .navbar__brand {
         display: flex;
         justify-content: flex-start;
-        padding: 12px;
         gap: 1rem;
+
+        padding: 12px;
     }
 }
 
@@ -88,7 +100,9 @@ img {
 
     .navbar__isotype {
         display: flex;
+
         width: 80px;
+
         margin-bottom: -5px;
     }
 }
@@ -126,6 +140,14 @@ img {
         background-color: var(--text-color);
     }
 
+    .navbar {
+        border-right: 1px solid var(--bg-color);
+    }
+
+    .navbar__item:focus {
+        outline: 2px solid var(--bg-color);
+    }
+
     .navbar__more,
     .navbar__brand,
     .navbar__icon:not(.perfil),
@@ -135,13 +157,5 @@ img {
 
     .perfil {
         border: 2px solid var(--bg-color);
-    }
-
-    .navbar {
-        border-right: 1px solid var(--bg-color);
-    }
-
-    .navbar__item:focus {
-        outline: 2px solid var(--bg-color);
     }
 }
