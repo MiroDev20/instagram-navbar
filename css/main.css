@@ -9,6 +9,25 @@ body {
     font-family: var(--font);
 }
 
+.main {
+    display: flex;
+
+    width: 100vw;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main__logo img{
+    width: 16vw;
+    object-fit: contain;
+}
+
+.main__tablet-image,
+.main__desktop-image {
+    display: none;
+}
+
 img {
     width: 24px;
 }
@@ -59,6 +78,14 @@ img {
 \*------------------------------*/
 
 @media (min-width: 768px) {
+    .main__mobile-image {
+        display: none;
+    }
+
+    .main__tablet-image {
+        display: flex;
+    }
+
     .navbar {
         flex-direction: column;
         justify-content: space-between;
@@ -94,6 +121,15 @@ img {
 }
 
 @media (min-width: 1264px) {
+    .main__mobile-image,
+    .main__tablet-image {
+        display: none;
+    }
+
+    .main__desktop-image {
+        display: flex;
+    }
+
     .navbar__text--hidden {
         display: flex;
     }
