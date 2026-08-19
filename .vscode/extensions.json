@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-vscode.live-server",
+        "davidanson.vscode-markdownlint",
+        "formulahendry.auto-rename-tag",
+        "pranaygp.vscode-css-peek",
+        "rafamel.subtle-brackets",
+        "ecmel.vscode-html-css"
+    ]
+}
