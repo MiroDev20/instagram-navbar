@@ -112,9 +112,9 @@ También puedes utilizar la extensión **Live Server** de Visual Studio Code.
 
 ## 🛣️ Próximos pasos
 
-- Convertir el botón de menú en un menú funcional.
-- Incorporar etiquetas `aria-label` a los controles de solo icono.
-- Optimizar la carga de imágenes mediante `<picture>`.
+- [x] Convertir el botón de menú en un menú funcional.
+- [x] Incorporar etiquetas `aria-label` a los controles de solo icono.
+- [x] Optimizar la carga de imágenes mediante `<picture>`.
 
 ## 📄 Licencia MIT
 
