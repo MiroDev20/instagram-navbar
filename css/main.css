@@ -67,10 +67,18 @@ img {
 
 .navbar__more,
 .navbar__logo,
-.navbar__isotype,
 .navbar__item--hidden,
 .navbar__text--hidden {
     display: none;
+}
+
+.navbar__isotype {
+    width: 80px;
+    margin-bottom: -5px;
+}
+
+.is-hidden {
+    display: none !important;
 }
 
 /*------------------------------*\
@@ -106,7 +114,6 @@ img {
     .navbar__logo,
     .navbar__item--hidden {
         display: flex;
-
         object-fit: contain;
     }
 
@@ -117,6 +124,11 @@ img {
         gap: 1rem;
 
         padding: 12px;
+    }
+
+    .navbar--expanded .navbar__text--hidden,
+    .navbar--expanded .navbar__isotype {
+        display: flex;
     }
 }
 
@@ -136,10 +148,10 @@ img {
 
     .navbar__isotype {
         display: flex;
+    }
 
-        width: 80px;
-
-        margin-bottom: -5px;
+    .navbar--expanded [data-text] {
+        display: none !important;
     }
 }
 

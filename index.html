@@ -24,6 +24,8 @@
             href="css/main.css"
         >
 
+        <script src="./javascript/index.js" defer></script>
+
         <title>Instagram Navbar</title>
     </head>
     <body>
@@ -54,7 +56,8 @@
                     alt="instagram logo"
                 >
                 <img
-                    class="navbar__isotype"
+                    data-text
+                    class="navbar__isotype navbar__text--hidden"
                     src="assets/navbar-icons/black-isotype.png"
                     alt="instagram isotype"
                 >
@@ -69,7 +72,7 @@
                         src="assets/navbar-icons/black-home.png"
                         alt="home"
                     >
-                    <span class="navbar__text navbar__text--hidden">Inicio</span>
+                    <span data-text class="navbar__text navbar__text--hidden">Inicio</span>
                 </a>
                 <a
                     class="navbar__item navbar__item--hidden"
@@ -80,7 +83,7 @@
                         src="assets/navbar-icons/black-search.png"
                         alt="search"
                     >
-                    <span class="navbar__text navbar__text--hidden">Búsqueda</span>
+                    <span data-text class="navbar__text navbar__text--hidden">Búsqueda</span>
                 </a>
                 <a
                     class="navbar__item"
@@ -91,7 +94,7 @@
                         src="assets/navbar-icons/black-compass.png"
                         alt="explore"
                     >
-                    <span class="navbar__text navbar__text--hidden">Explorar</span>
+                    <span data-text class="navbar__text navbar__text--hidden">Explorar</span>
                 </a>
                 <a
                     class="navbar__item"
@@ -102,7 +105,7 @@
                         src="assets/navbar-icons/black-video.png"
                         alt="reels"
                     >
-                    <span class="navbar__text navbar__text--hidden">Reels</span>
+                    <span data-text class="navbar__text navbar__text--hidden">Reels</span>
                 </a>
                 <a
                     class="navbar__item"
@@ -113,7 +116,7 @@
                         src="assets/navbar-icons/black-send.png"
                         alt="messages"
                     >
-                    <span class="navbar__text navbar__text--hidden">Mensajes</span>
+                    <span data-text class="navbar__text navbar__text--hidden">Mensajes</span>
                 </a>
                 <a
                     class="navbar__item navbar__item--hidden"
@@ -124,7 +127,7 @@
                         src="assets/navbar-icons/black-heart.png"
                         alt="notifications"
                     >
-                    <span class="navbar__text navbar__text--hidden">Notificaciones</span>
+                    <span data-text class="navbar__text navbar__text--hidden">Notificaciones</span>
                 </a>
                 <a
                     class="navbar__item"
@@ -135,7 +138,7 @@
                         src="assets/navbar-icons/black-add.png"
                         alt="create"
                     >
-                    <span class="navbar__text navbar__text--hidden">Crear</span>
+                    <span data-text class="navbar__text navbar__text--hidden">Crear</span>
                 </a>
                 <a
                     class="navbar__item"
@@ -146,11 +149,13 @@
                         src="assets/navbar-icons/miro-profile.png"
                         alt="perfil"
                     >
-                    <span class="navbar__text navbar__text--hidden">Perfil</span>
+                    <span data-text class="navbar__text navbar__text--hidden">Perfil</span>
                 </a>
             </div>
             <div class="navbar__more">
                 <img
+                    data-navbar-toggle
+                    data-menu-status="inactive"
                     class="navbar__menu-icon"
                     src="assets/navbar-icons/black-menu.png"
                     alt="menu"
