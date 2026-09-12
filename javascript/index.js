@@ -13,6 +13,13 @@ function menuToggle() {
 
 menuButton.addEventListener('click', menuToggle);
 
+menuButton.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        menuToggle();
+    }
+});
+
 const desktopMediaQuery = window.matchMedia('(min-width: 1264px)');
 
 desktopMediaQuery.addEventListener('change', () => {
