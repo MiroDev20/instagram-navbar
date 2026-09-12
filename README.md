@@ -14,9 +14,12 @@
     <img src="https://img.shields.io/badge/Responsive-111111?style=for-the-badge&logo=responsive&logoColor=white" alt="Responsive design">
   </p>
 
-  <a href="#-preview">Ver preview</a> ·
-  <a href="#-ejecución-local">Ejecutar localmente</a> ·
-  <a href="#-estructura">Explorar el código</a>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <a href="#-preview">Ver preview</a>
+    <a href="https://mirodev20.github.io/instagram-navbar/">Ver demo en vivo</a>
+    <a href="#-ejecución-local">Ejecutar localmente</a>
+    <a href="#-estructura">Explorar el código</a>
+  </div>
 
 </div>
 
