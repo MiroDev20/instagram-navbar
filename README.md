@@ -72,7 +72,7 @@ La interfaz adapta automáticamente su distribución al tamaño de la pantalla:
 - Reglas CSS agrupadas en conjuntos
 - Clases con convención BEM
 
-No utiliza JavaScript, frameworks ni dependencias de instalación.
+No utiliza frameworks ni dependencias de instalación.
 
 ## 📁 Estructura
 

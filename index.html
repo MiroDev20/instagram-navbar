@@ -31,21 +31,20 @@
     <body>
         <main class="main">
             <div class="main__logo">
-                <img
-                    class="main__mobile-image"
-                    src="assets/responsive-images/miro-mobile.png"
-                    alt="Logo principal"
-                >
-                <img
-                    class="main__tablet-image"
-                    src="assets/responsive-images/miro-tablet.png"
-                    alt="Logo principal"
-                >
-                <img
-                    class="main__desktop-image"
-                    src="assets/responsive-images/miro-desktop.png"
-                    alt="Logo principal"
-                >
+                <picture>
+                    <source
+                        media="(min-width: 1264px)"
+                        srcset="assets/responsive-images/miro-desktop.png"
+                    >
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="assets/responsive-images/miro-tablet.png"
+                    >
+                    <img
+                        src="assets/responsive-images/miro-mobile.png"
+                        alt="Logo principal"
+                    >
+                </picture>
             </div>
         </main>
         <nav class="navbar">
